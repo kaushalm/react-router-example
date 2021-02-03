@@ -1,0 +1,14 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.nav {
+  padding: 10px;
+  margin: 10px;
+}
+
+.link {
+  margin: 5px;
+  padding: 5px;
+}
