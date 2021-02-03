@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
@@ -11,12 +11,12 @@ export default function App() {
   return (
     <main>
       <Navbar />
-      <switch>
+      <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="*" component={Error} />
-      </switch>
+      </Switch>
     </main>
   );
 }
